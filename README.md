@@ -2,9 +2,9 @@
 
 # EventMFahrplan
 
-EventFahrplan is a viewer for event schedules such as
+EventFahrplan is a viewer for event schedules. This fork has been adapted for [EMF2024](https://www.emfcamp.org). It was made for events such as
 [Chaos Computer Club e.V. events][ccc-events] like [Chaos Communication Camp][camp-website],
-[Chaos Communication Congress][congress-website] or [JahresEndVeranstaltungen][jev-website]. This fork has been adapted for [EMF2024](https://www.emfcamp.org).
+[Chaos Communication Congress][congress-website] or [JahresEndVeranstaltungen][jev-website]. 
 
 The app is available for Android devices.
 
