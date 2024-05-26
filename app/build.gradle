@@ -1,7 +1,7 @@
-import nerd.tuxmobil.fahrplan.congress.Android
-import nerd.tuxmobil.fahrplan.congress.Compose
-import nerd.tuxmobil.fahrplan.congress.Config
-import nerd.tuxmobil.fahrplan.congress.Libs
+import event.pgm.fahrplan.emf2024.Android
+import event.pgm.fahrplan.emf2024.Compose
+import event.pgm.fahrplan.emf2024.Config
+import event.pgm.fahrplan.emf2024.Libs
 
 ext.set("APP_VERSION", "${gitSha()}")
 
@@ -13,7 +13,7 @@ apply plugin: "com.getkeepsafe.dexcount"
 apply from: "../gradle/sonarqube.gradle"
 
 android {
-    namespace "nerd.tuxmobil.fahrplan.congress"
+    namespace "event.pgm.fahrplan.emf2024"
 
     compileSdk Android.compileSdkVersion
     buildToolsVersion = Android.buildToolsVersion
@@ -86,7 +86,7 @@ android {
     productFlavors {
         emf2024 {
             dimension defaultDimension
-            applicationId "info.metadude.android.emf24.schedule"
+            applicationId 'event.emf2024.fahrplan'
             buildConfigField "String", "GOOGLE_PLAY_URL", '"https://f-droid.org/packages/info.metadude.android.congress.schedule"'
             buildConfigField "String", "F_DROID_URL", '"https://f-droid.org/packages/info.metadude.android.congress.schedule"'
             buildConfigField "String", "SCHEDULE_URL", '"https://www.emfcamp.org/schedule/2024.frab"'

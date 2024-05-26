@@ -51,7 +51,7 @@
         TODO: Use ValidateableEditTextPreference
         see https://github.com/EventFahrplan/EventFahrplan/issues/62
         -->
-        <nerd.tuxmobil.fahrplan.congress.preferences.StyleableEditTextPreference
+        <event.pgm.fahrplan.emf2024.preferences.StyleableEditTextPreference
             android:defaultValue="@string/preference_default_value_alternative_schedule_url"
             android:hint="@string/preference_hint_alternative_schedule_url"
             android:inputType="textUri"
@@ -74,7 +74,7 @@
         app:iconSpaceReserved="false">
 
         <!-- defaultValue is applied in AlarmTonePreference -->
-        <nerd.tuxmobil.fahrplan.congress.preferences.AlarmTonePreference
+        <event.pgm.fahrplan.emf2024.preferences.AlarmTonePreference
             android:key="@string/preference_key_alarm_tone"
             android:title="@string/preference_title_alarm_tone"
             app:iconSpaceReserved="false"
@@ -105,7 +105,7 @@
         android:title="@string/preference_engelsystem_category_title"
         app:iconSpaceReserved="false">
 
-        <nerd.tuxmobil.fahrplan.congress.preferences.ValidateableEditTextPreference
+        <event.pgm.fahrplan.emf2024.preferences.ValidateableEditTextPreference
             android:defaultValue="@string/preference_default_value_engelsystem_json_export_url"
             android:hint="@string/preference_hint_engelsystem_json_export_url"
             android:inputType="textUri"

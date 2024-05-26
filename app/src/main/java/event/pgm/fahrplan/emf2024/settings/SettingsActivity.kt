@@ -1,0 +1,40 @@
+package event.pgm.fahrplan.emf2024.settings
+
+import android.app.Activity
+import android.content.Intent
+import android.graphics.drawable.ColorDrawable
+import android.os.Bundle
+import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.commit
+import event.pgm.fahrplan.emf2024.R
+import event.pgm.fahrplan.emf2024.base.BaseActivity
+
+class SettingsActivity : BaseActivity(R.layout.settings) {
+
+    companion object {
+
+        const val REQUEST_CODE = 5
+
+        fun startForResult(activity: Activity) {
+            val intent = Intent(activity, SettingsActivity::class.java)
+            activity.startActivityForResult(intent, REQUEST_CODE)
+        }
+
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val toolbar = requireViewByIdCompat<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        val actionBarColor = ContextCompat.getColor(this, R.color.colorActionBar)
+        supportActionBar!!.setBackgroundDrawable(ColorDrawable(actionBarColor))
+
+        if (savedInstanceState == null) {
+            supportFragmentManager.commit {
+                add(R.id.container, SettingsFragment())
+            }
+        }
+    }
+
+}

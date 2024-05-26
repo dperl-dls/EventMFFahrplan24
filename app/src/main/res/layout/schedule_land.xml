@@ -58,7 +58,7 @@
 
             </LinearLayout>
 
-            <nerd.tuxmobil.fahrplan.congress.schedule.HorizontalSnapScrollView
+            <event.pgm.fahrplan.emf2024.schedule.HorizontalSnapScrollView
                     android:id="@+id/horizScroller"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -74,7 +74,7 @@
                     <!-- Room column views are added here at runtime. -->
 
                 </LinearLayout>
-            </nerd.tuxmobil.fahrplan.congress.schedule.HorizontalSnapScrollView>
+            </event.pgm.fahrplan.emf2024.schedule.HorizontalSnapScrollView>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </RelativeLayout>

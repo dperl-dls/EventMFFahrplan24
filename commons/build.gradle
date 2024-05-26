@@ -1,6 +1,6 @@
-import nerd.tuxmobil.fahrplan.congress.Android
-import nerd.tuxmobil.fahrplan.congress.Config
-import nerd.tuxmobil.fahrplan.congress.Libs
+import event.pgm.fahrplan.emf2024.Android
+import event.pgm.fahrplan.emf2024.Config
+import event.pgm.fahrplan.emf2024.Libs
 
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"

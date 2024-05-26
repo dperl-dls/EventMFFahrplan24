@@ -1,0 +1,18 @@
+package event.pgm.fahrplan.emf2024.extensions
+
+import event.pgm.fahrplan.emf2024.models.Session
+
+/**
+ * Heuristic to detect whether the session originates from Pretalx.
+ * url: https://domain/<slug>/talk/<alphanumeric identifier>
+ * subtitle: not supported, therefore empty
+ * See: https://github.com/EventFahrplan/EventFahrplan/pull/157
+ */
+val Session.originatesFromPretalx
+    get() = url.isNotEmpty() && slug.isNotEmpty() && url.contains("/talk/") && subtitle.isEmpty()
+
+// The track name constant must match the "track" name in the schedule.xml!
+const val WIKI_SESSION_TRACK_NAME = "self organized sessions"
+
+val Session.originatesFromWiki
+    get() = WIKI_SESSION_TRACK_NAME == track
