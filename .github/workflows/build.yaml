@@ -87,3 +87,8 @@ jobs:
           check_name: Test results (androidTest), API level ${{ matrix.api-level }}
           files: |
             **/androidTest-results/**/*.xml
+              
+      - name: Build and Release APK
+        uses: sangatdesai/release-apk@V1.0
+
+            
