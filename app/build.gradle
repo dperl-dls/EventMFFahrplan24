@@ -20,7 +20,7 @@ android {
 
     defaultConfig {
         versionCode 101
-        versionName "1.64.0"
+        versionName "v0.1.0"
         minSdk Android.minSdkVersion
         targetSdk Android.targetSdkVersion
         base.archivesName = "Fahrplan-$versionName"
