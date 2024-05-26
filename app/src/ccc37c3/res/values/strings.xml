@@ -2,13 +2,13 @@
 <resources>
     <string name="app_name">37C3 Schedule</string>
     <string name="app_hardcoded_subtitle">
-        December 27–30 2023, Congress Center Hamburg
+        May 30th–June 2nd 2024, Eastnor, UK
     </string>
-    <string name="conference_name" translatable="false">37C3</string>
+    <string name="conference_name" translatable="false">EMF2024</string>
     <string name="copyright_logo">
-        37C3: Unlocked. Design by Robokid + Luis F. Masallera + Euler Void
+        EMF 2024
     </string>
     <string name="about_logo_content_description">
-        37C3 Unlocked logo
+        EMF Logo
     </string>
 </resources>
