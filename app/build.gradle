@@ -117,6 +117,7 @@ android {
         // for okio - https://github.com/square/okio/issues/58
         warning "InvalidPackage"
         warning "MissingDefaultResource"
+        baseline = file("lint-baseline.xml")
     }
 
     compileOptions {
