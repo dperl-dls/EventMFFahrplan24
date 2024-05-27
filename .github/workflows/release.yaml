@@ -21,6 +21,13 @@ jobs:
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v4
         with:
+          name: Unsigned-APK
+          path: app/build/outputs/apk/emf2024/release/Fahrplan-v0.9.0-emf2024-release-unsigned.apk
+          retention-days: 365
+
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v4
+        with:
           name: Signed-APK
-          path: app/build/outputs/apk/release/app-release.apk
+          path: app/build/outputs/apk/emf2024/release/Fahrplan-v0.9.0-emf2024-release-release.apk
           retention-days: 365
