@@ -32,12 +32,12 @@ jobs:
           echo -
           ls app/build/outputs/apk/emf2024
           echo -
-          ls app/build/outputs/apk/emf2024/app-release
+          ls app/build/outputs/apk/emf2024/release
           
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v4
         with:
-          name: Signed-APK
+          name: EMF2024-Fahrplan-Signed-APK
           path: app/build/outputs/apk/emf2024/release/app-release.apk
           retention-days: 365
