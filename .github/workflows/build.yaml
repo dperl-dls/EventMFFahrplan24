@@ -88,7 +88,6 @@ jobs:
           files: |
             **/androidTest-results/**/*.xml
               
-      - name: Build and Release APK
-        uses: sangatdesai/release-apk@V1.0
+
 
             
